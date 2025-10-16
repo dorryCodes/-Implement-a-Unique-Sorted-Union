@@ -1,0 +1,12 @@
+** start of script.js **
+
+function uniteUnique(...args){
+args=args.join();
+let arg=new Set(args)
+let arr=[...arg].filter(x=>x !==',').map(y=>parseInt(y))
+return arr
+}
+console.log(uniteUnique([1,2,4],[2,3,4]))
+
+** end of script.js **
+
